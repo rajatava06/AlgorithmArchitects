@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVAMIND - AI Neural Learning Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-orange: #ff6b00;
+      --brand-dark: #050505;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+      background-color: #050505;
+    }
+    .grid-bg {
+      background-image: 
+        linear-gradient(to right, rgba(255, 107, 0, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 107, 0, 0.08) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .orange-glow {
+      background: radial-gradient(circle at center, rgba(255, 107, 0, 0.2) 0%, transparent 70%);
+      filter: blur(80px);
+    }
+    .orange-gradient-text {
+      background: linear-gradient(to right, #ffb800, #ff6b00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-nav {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .orange-dual-button {
+      background: linear-gradient(135deg, #ffb800 0%, #ff6b00 100%);
+      box-shadow: 0 10px 30px rgba(255, 107, 0, 0.3);
+    }
+    .feature-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .feature-card:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 107, 0, 0.4);
+      transform: translateY(-5px);
+    }
+    .testimonial-card {
+      background: #0a0a0a;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    
+    @keyframes floating {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    .animate-floating {
+      animation: floating 6s ease-in-out infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.1); }
+    }
+    .animate-pulse-glow {
+      animation: pulse-glow 8s ease-in-out infinite;
+    }
+
+    * { transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+    
+    .stagger-1 { animation-delay: 100ms; }
+    .stagger-2 { animation-delay: 200ms; }
+    .stagger-3 { animation-delay: 300ms; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+</head>
+<body class="bg-[#050505] text-white">
+  <div id="root"></div>
+</body>
+</html>

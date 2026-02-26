@@ -1,0 +1,8 @@
+{
+  "name": "NOVAMIND AI",
+  "description": "Master learning with hyper-personalized study plans and real-time cognitive analysis powered by Gemini 3 and AMD AI.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
